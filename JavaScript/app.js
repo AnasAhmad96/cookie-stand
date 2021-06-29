@@ -1,7 +1,7 @@
 'use strict';
 
 const workingHours = ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:'];
-
+let positionarray=['Seattle','Tokyo','Dubai','Paris','Lima'];
 function Location(name, minCustomer, maxCustomer, avgCookies, customerEachHour, cookiesEachHour, total) {
   this.name = name;
   this.minCustomer = minCustomer;
@@ -45,20 +45,61 @@ Location.prototype.calclateCok = function () {
     this.total += this.cookiesEachHour[i];
   }
 },
+//*****************************************Table By Dom*********************************************/
+
+Location.prototype.render = function () {
+  const parentElement = document.getElementById('Postion');
+
+  const article = document.createElement('article');
+  parentElement.appendChild(article);
+
+  let tableEkemnt = document.createElement('table');
+  article.appendChild(tableEkemnt);
+
+  for (let i = 0; i < workingHours.length; i++) {
+  let headrow = document.createElement('tr');
+    tableEkemnt.appendChild(headrow);
+    headrow.textContent = workingHours[i];
+
+    let hedcol = document.createElement('td');
+    tableEkemnt.appendChild(hedcol);
+    hedcol.textContent = positionarray[i];
+  }
+
+};
+Seattle.render();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Seattle.getRand();
-Tokyo.getRand();
-Dubai.getRand();
-Paris.getRand();
-Lima.getRand();
 Seattle.calclateHour();
-Tokyo.calclateHour();
-Dubai.calclateHour();
-Paris.calclateHour();
-Lima.calclateHour();
 Seattle.calclateCok();
+Tokyo.getRand();
+Tokyo.calclateHour();
 Tokyo.calclateCok();
+Dubai.getRand();
+Dubai.calclateHour();
 Dubai.calclateCok();
+Paris.getRand();
+Paris.calclateHour();
 Paris.calclateCok();
+Lima.getRand();
+Lima.calclateHour();
 Lima.calclateCok();
 
 
