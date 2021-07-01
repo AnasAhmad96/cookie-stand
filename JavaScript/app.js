@@ -96,7 +96,7 @@ console.log(locationsArray);
 
 
 // rendering function for result div
-let parent = document.getElementById('sales');
+let parent = document.getElementById('result');
 console.log(parent);
 
 let tableElement = document.createElement('table');
