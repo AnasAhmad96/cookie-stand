@@ -1,4 +1,3 @@
-
 'use strict';
 
 
@@ -32,6 +31,7 @@ function random(min, max) {
 
 let locationsArray = [];
 
+
 //constructor
 function Location(name, minCus, maxCus, avgCookiesCus) {
   this.name = name;
@@ -49,6 +49,10 @@ function Location(name, minCus, maxCus, avgCookiesCus) {
   locationsArray.push(this);
 
 }
+
+
+
+
 
 //prototype random custumer per hour
 Location.prototype.calCustomersEachHour = function () {
@@ -88,8 +92,11 @@ console.log(lima);
 
 console.log(locationsArray);
 
+
+
+
 // rendering function for result div
-let parent = document.getElementById('result');
+let parent = document.getElementById('sales');
 console.log(parent);
 
 let tableElement = document.createElement('table');
@@ -140,7 +147,6 @@ Location.prototype.render = function () {
 
 
 
-
 // calling loop
 for (let i = 0; i < locationsArray.length; i++) {
   locationsArray[i].calCustomersEachHour();
@@ -160,7 +166,6 @@ function makeFooter() {
   let totalOfTotals = 0;
   for (let i = 0; i < workHour.length; i++) {
     let totalEachHour = 0;
-
     for (let j = 0; j < locationsArray.length; j++) {
 
       totalEachHour += locationsArray[j].cookiesEachHour[j];
@@ -179,7 +184,6 @@ function makeFooter() {
 
 }
 makeFooter();
-
 // 'use strict';
 
 // const workingHours = ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:'];
@@ -197,24 +201,6 @@ makeFooter();
 
 // let Seattle = new Location('Seattle', 23, 65, 6.3, [], [], 0);
 // console.log(Seattle);
-
-// Seattle.render();
-// Seattle.getRand();
-// Seattle.calclateHour();
-// Seattle.calclateCok();
-// Tokyo.getRand();
-// Tokyo.calclateHour();
-// Tokyo.calclateCok();
-// Dubai.getRand();
-// Dubai.calclateHour();
-// Dubai.calclateCok();
-// Paris.getRand();
-// Paris.calclateHour();
-// Paris.calclateCok();
-// Lima.getRand();
-// Lima.calclateHour();
-// Lima.calclateCok();
-
 
 // let Tokyo = new Location('Tokyo', 3, 24, 1.2, [], [], 0);
 // console.log(Tokyo);
