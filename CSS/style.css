@@ -1,3 +1,4 @@
+
 body {
         height: 100%;
         color:whitesmoke;
@@ -66,4 +67,12 @@ header nav ul li {
 li a {
     color : whitesmoke;
     text-decoration:none;
+
+table {
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    border: 2px solid black;
+
 }
