@@ -1,3 +1,4 @@
+
 body {
         height: 100%;
         color:whitesmoke;
@@ -78,7 +79,18 @@ header h1 {
 li a {
     color : rgba(218, 11, 11, 0.849);
     text-decoration:none;
+<<<<<<< HEAD
     font-weight: bolder;
     font-size: 23px;
     
+=======
+
+table {
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    border: 2px solid black;
+
+>>>>>>> 27ea57c4069c4825c839a42fbf88134a39ee2d27
 }
