@@ -163,7 +163,7 @@ function makeFooter() {
     let totalEachHour = 0;
     for (let j = 0; j < locationsArray.length; j++) {
 
-      totalEachHour += locationsArray[j].cookiesEachHour[j];
+      totalEachHour += locationsArray[j].cookiesEachHour[i];
     }
     totalOfTotals += totalEachHour;
     let footerData = document.createElement('td');

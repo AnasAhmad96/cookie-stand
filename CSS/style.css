@@ -9,11 +9,22 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    body header form {
+        text-align: center;
+    
+    }
 form {
     width: 550px;
     height: 450px;
     margin: auto;
     position: relative;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: bolder;
+    font-size: 20px;
+   }
+   form label {
+       background-color:rgba(255, 68, 0, 0.5);
    }
 input {
     width: 50%;
@@ -36,6 +47,8 @@ input {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing:border-box;
+    background-color: rgba(177, 19, 19, 0.671);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 table {
     border-collapse: collapse;
@@ -46,24 +59,26 @@ table {
 }
 tr, th, td {
     border: 2px solid black;
-    background-color: rgb(41, 40, 40);
+    background-color: rgba(0, 0, 0, 0.589);
 }
 
 body header h1 {
     text-align: center;
-}
-body header form {
-    text-align: center;
-
 }
 
 header nav ul li {
     display:inline-block;
     font-size: 20px;
     padding: 10px;
+    position: sticky;
 }
-
+header h1 {
+    background-color:rgba(234, 255, 46, 0.541);
+}
 li a {
-    color : whitesmoke;
+    color : rgba(218, 11, 11, 0.849);
     text-decoration:none;
+    font-weight: bolder;
+    font-size: 23px;
+    
 }
