@@ -1,0 +1,11 @@
+body header nav {
+    width: 10px;
+    height: 5px;
+}
+
+#imgs {
+    width: 50%;
+    height: 80%;
+    float: left;
+    display: inline;
+}
